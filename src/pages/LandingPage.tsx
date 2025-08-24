@@ -198,6 +198,45 @@ const LandingPage = () => {
           </p>
         </section>
 
+        {/* Mentor Section */}
+        <section className="mb-16">
+          <div className="bg-gradient-to-br from-slate-50 to-slate-100 border-2 border-slate-200 rounded-2xl p-8 shadow-lg">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-slate-800 mb-4">
+                Quem será seu Mentor
+              </h2>
+              <div className="w-24 h-1 bg-accent mx-auto rounded-full"></div>
+            </div>
+            
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-6">
+                <div className="mb-6">
+                  <img 
+                    src="/images/Juliano.jpeg" 
+                    alt="Juliano Bianchesi" 
+                    className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-white shadow-xl"
+                  />
+                </div>
+                <h3 className="text-4xl font-bold text-primary mb-2">
+                  Juliano Bianchesi
+                </h3>
+              </div>
+              
+              <div className="space-y-6 text-slate-700 text-lg leading-relaxed">
+                <p>
+                  Juliano Bianchesi é um profissional com ampla experiência, especialista em gestão e desenvolvimento de negócios, liderança e técnicas comportamentais. Formado em Gestão de Negócios com especializações em Psicanálise, TCC e PNL ao longo de sua trajetória acumulou resultados expressivos em metas que movimentaram mais de <strong className="text-accent font-bold">R$70 milhões</strong>.
+                </p>
+                <p>
+                  Com uma abordagem prática e focada em resultados, vivenciou e superou desafios na área corporativa em <strong className="text-accent font-bold">multinacionais por mais de 18 anos</strong>.
+                </p>
+                <p>
+                  Hoje, dedica-se a compartilhar seu conhecimento por meio de mentorias estruturadas, voltadas para profissionais do mundo corporativo que desejam sair da estagnação e atingir novos patamares financeiros e profissionais. Além disso, é reconhecido por sua habilidade em traduzir conceitos complexos em estratégias aplicáveis, sempre com foco na realidade e nos desafios do mercado atual.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Final Urgency */}
         <section className="mb-16">
           <div className="bg-urgent/10 border border-urgent rounded-xl p-8 text-center">
