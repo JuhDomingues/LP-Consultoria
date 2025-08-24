@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Executive Sales Page Design System */
+
+@layer base {
+  :root {
+    /* Executive Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 210 11% 15%;
+
+    /* Executive Primary - Deep Corporate Blue */
+    --primary: 217 33% 17%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 217 50% 35%;
+
+    /* Premium Gold Accents */
+    --premium: 43 96% 56%;
+    --premium-foreground: 210 11% 15%;
+    --premium-muted: 43 30% 92%;
+
+    /* Success/Guarantee Green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --success-light: 142 76% 96%;
+
+    /* Urgency/Alert Colors */
+    --urgent: 0 84% 60%;
+    --urgent-foreground: 0 0% 98%;
+    --urgent-light: 0 84% 97%;
+
+    /* Executive Cards & Surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 15%;
+    --card-premium: 43 15% 97%;
+    --card-border: 210 20% 92%;
+
+    /* Muted Elements */
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent Colors */
+    --accent: 43 96% 56%;
+    --accent-foreground: 210 11% 15%;
+
+    /* Secondary Colors */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 215 16% 47%;
+
+    /* Destructive Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Popover Colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 15%;
+
+    /* Gradients */
+    --gradient-executive: linear-gradient(135deg, hsl(217 33% 17%), hsl(217 50% 25%));
+    --gradient-premium: linear-gradient(135deg, hsl(43 96% 56%), hsl(43 96% 48%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 33% 17%) 0%, hsl(217 50% 35%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 28%));
+
+    /* Shadows */
+    --shadow-executive: 0 10px 40px -10px hsl(217 33% 17% / 0.3);
+    --shadow-premium: 0 10px 30px -5px hsl(43 96% 56% / 0.3);
+    --shadow-card: 0 4px 20px -2px hsl(217 33% 17% / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 217 33% 17%;
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 11% 15%;
+    --foreground: 0 0% 98%;
+
+    /* Executive Brand Colors - Dark Mode */
+    --primary: 217 50% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 217 60% 45%;
+
+    /* Premium Gold - Dark Mode */
+    --premium: 43 96% 56%;
+    --premium-foreground: 210 11% 15%;
+    --premium-muted: 43 20% 10%;
+
+    /* Success/Guarantee - Dark Mode */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    --success-light: 142 76% 8%;
+
+    /* Urgency - Dark Mode */
+    --urgent: 0 84% 60%;
+    --urgent-foreground: 0 0% 98%;
+    --urgent-light: 0 84% 8%;
+
+    /* Cards - Dark Mode */
+    --card: 210 11% 15%;
+    --card-foreground: 0 0% 98%;
+    --card-premium: 43 15% 12%;
+    --card-border: 210 20% 25%;
+
+    --muted: 210 20% 20%;
+    --muted-foreground: 215 16% 65%;
+
+    /* Accent Colors - Dark Mode */
+    --accent: 43 96% 56%;
+    --accent-foreground: 210 11% 15%;
+
+    /* Secondary Colors - Dark Mode */
+    --secondary: 210 20% 20%;
+    --secondary-foreground: 215 16% 65%;
+
+    /* Destructive Colors - Dark Mode */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Popover Colors - Dark Mode */
+    --popover: 210 11% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --border: 210 20% 25%;
+    --input: 210 20% 25%;
+    --ring: 217 50% 35%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Executive Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/20 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/40;
+  }
+}

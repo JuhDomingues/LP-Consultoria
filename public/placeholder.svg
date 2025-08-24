@@ -1,0 +1,47 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Executive Professional Background -->
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A4AA4"/>
+      <stop offset="100%" stop-color="#1E3A5F"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFA500"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#heroGradient)"/>
+  
+  <!-- Corporate Pattern -->
+  <g opacity="0.1">
+    <rect x="0" y="0" width="1200" height="200" fill="url(#accentGradient)"/>
+    <rect x="0" y="600" width="1200" height="200" fill="url(#accentGradient)"/>
+  </g>
+  
+  <!-- Central Ascend Symbol -->
+  <g transform="translate(500, 300)">
+    <!-- Arrow pointing upward - symbolizing ascension -->
+    <path d="M100 200L200 0L300 200H250L200 50L150 200H100Z" fill="#FFD700"/>
+    <!-- Secondary arrows for emphasis -->
+    <path d="M50 250L100 150L150 250H125L100 175L75 250H50Z" fill="#FFD700" opacity="0.7"/>
+    <path d="M250 250L300 150L350 250H325L300 175L275 250H250Z" fill="#FFD700" opacity="0.7"/>
+  </g>
+  
+  <!-- Executive Grid Pattern -->
+  <g opacity="0.05" stroke="#FFD700" stroke-width="1" fill="none">
+    <defs>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="200" cy="150" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="1000" cy="200" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="150" cy="650" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="1050" cy="600" r="3" fill="#FFD700" opacity="0.6"/>
+</svg>
